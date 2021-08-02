@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_set"
+        android:title="@string/pengaturanmain" />
+    <item
+        android:id="@+id/action_sumber"
+        android:title="@string/pustaka"/>
+    <item
+        android:id="@+id/action_tentangapp"
+        android:title="@string/tentang_aplikasi"/>
+
+</menu>
+

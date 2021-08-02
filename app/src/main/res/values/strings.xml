@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name" translatable="false">ATLAS INDONESIA</string>
+    <string name="nama_daerah">Nama Daerah</string>
+    <string name="detail">Detail</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="tentangapp">Aplikasi ATLAS INDONESIA merupakan aplikasi sederhana yang dikembangkan oleh ARIF PURNOMO AJI (Codename: Reefii) yang didalamnya berisi konten mengenai peta wilayah Indonesia. Jika terdapat saran/masukan untuk pengembangan aplikasi lebih lanjut, Anda dapat menghubungi developer melalui Email: Arifpurnomoaji998@gmail.com, atau dengan menekan tombol kontak developer dibawah ini:</string>
+    <string name="pengaturan">Pengaturan Bahasa</string>
+    <string name="pustaka">Sumber Pustaka</string>
+    <string name="share">Bagikan</string>
+    <string name="unduh_buku_atlas_indonesia">Unduh Buku Atlas Indonesia</string>
+    <string name="sumber_1">Aplikasi ini dibuat berdasarkan data dari Ebook Resmi:</string>
+    <string name="sumber_2" translatable="false">ATLAS Indonesia dan Dunia untuk SMA dan Sederajat</string>
+    <string name="sumber_3">dari Badan Informasi Geospasial (BIG) Indonesia, yang dapat diakses melalui tombol dibawah</string>
+    <string name="Urutan" translatable="false">0</string>
+    <string name="detail_derah">Informasi Detail</string>
+    <string name="uraian_detail_daerah">Uraian Detail Daerah</string>
+    <string name="daerah_ini">Halo, saya menemukan detail mengenai daerah</string>
+    <string name="peta_area">PETA WILAYAH</string>
+    <string name="cubitklik">(cubit atau klik untuk memperbesar peta)</string><![CDATA[>
+    ]]>
+    <string name="pengaturanmain">Pengaturan</string>
+    <string name="diaplikasi">pada aplikasi Atlas Indonesia!</string>
+    <string name="pengaturantema">Pengaturan Tema</string>
+
+    <!-- Nama daerah -->
+    <string-array name="nameea">
+        <item>NKRI</item>
+        <item>PULAU SUMATRA</item>
+        <item>ACEH</item>
+        <item>SUMATRA UTARA</item>
+        <item>SUMATRA SELATAN</item>
+        <item>SUMATRA BARAT</item>
+        <item>BENGKULU</item>
+        <item>RIAU</item>
+        <item>KEP. RIAU</item>
+        <item>JAMBI</item>
+        <item>LAMPUNG</item>
+        <item>BANGKA BELITUNG</item>
+        <item>PULAU KALIMANTAN</item>
+        <item>KALIMANTAN BARAT</item>
+        <item>KALIMANTAN TIMUR</item>
+        <item>KALIMANTAN SELATAN</item>
+        <item>KALIMANTAN TENGAH</item>
+        <item>KALIMANTAN UTARA</item>
+        <item>PULAU JAWA</item>
+        <item>BANTEN</item>
+        <item>DKI. JAKARTA</item>
+        <item>JAWA BARAT</item>
+        <item>JAWA TENGAH</item>
+        <item>DI. YOGYAKARTA</item>
+        <item>JAWA TIMUR</item>
+        <item>PULAU BALI dan NT</item>
+        <item>BALI</item>
+        <item>NUSA TENGGARA TIMUR</item>
+        <item>NUSA TENGGARA BARAT</item>
+        <item>PULAU SULAWESI</item>
+        <item>GORONTALO</item>
+        <item>SULAWESI BARAT</item>
+        <item>SULAWESI SELATAN</item>
+        <item>SULAWESI UTARA</item>
+        <item>SULAWESI TENGAH</item>
+        <item>SULAWESI TENGGARA</item>
+        <item>PULAI MALUKU</item>
+        <item>MALUKU UTARA</item>
+        <item>MALUKU</item>
+        <item>PULAU PAPUA</item>
+        <item>PAPUA BARAT</item>
+        <item>PAPUA</item>
+
+    </string-array>
+
+    <!-- nomor daerah -->
+    <string-array name="urutannya">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+
+    </string-array>
+
+    <!-- detail info -->
+    <string-array name="detaillnya">
+        <item>Indonesia, disebut juga dengan Negara Kesatuan Republik Indonesia (NKRI, pengucapan bahasa Indonesia: [nə\ˈɡara kəsa\ˈt̪ua̯n re\ˈpublɪk in.\ˈdo.nɛ.sja]); atau hanya Republik Indonesia (RI) adalah negara di Asia Tenggara yang dilintasi garis khatulistiwa dan berada di antara daratan benua Asia dan Australia, serta antara Samudra Pasifik dan Samudra Hindia. Indonesia adalah negara kepulauan terbesar di dunia yang terdiri dari 17.504 pulau.[15] Nama alternatif yang biasa dipakai adalah Nusantara.[16] Dengan populasi mencapai 270.203.917 jiwa pada tahun 2020,[17] Indonesia adalah negara berpenduduk terbesar keempat di dunia dan negara yang berpenduduk Muslim terbesar di dunia, dengan penganut lebih dari 230 juta jiwa. Bentuk negara Indonesia adalah negara kesatuan dan bentuk pemerintahan Indonesia adalah republik, dengan Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah dan Presiden yang dipilih secara langsung. Ibu kota negara Indonesia adalah Jakarta. Indonesia berbatasan darat dengan Malaysia di Pulau Kalimantan dan Pulau Sebatik, dengan Papua Nugini di Pulau Papua dan dengan Timor Leste di Pulau Timor. Negara tetangga lainnya adalah Singapura, Filipina, Australia, dan wilayah persatuan Kepulauan Andaman dan Nikobar di India. Jumlah Pulau di Indonesia (termasuk pulau besar dan pulau kecil) yang tertera pada Undang-Undang no 6 Tahun 1996 tentang Perairan Indonesia adalah 17.508 Pulau, namun adanya permasalahan effective occupation pada 4 Pulau yaitu Pulau Sipadan, Pulau Ligitan, Pulau Yako dan Pulau Kambing menyebabkan lepasnya kedaulatan terhadap Pulau tersebut. Untuk menghindari hal tersebut terulang kembali maka Pemerintah Republik Indonesia melakukan banyak tindakan dan kegiatan di wilayah perbatasan khususnya di Pulau-pulau Kecil dan Pulau-pulau Kecil Terluar. Indonesia mempunyai 111 Pulau-Pulau Kecil Terluar yang telah ditetapkan dalam Kepres 6/2017 tentang Penetapan Pulau-Pulau Kecil Terluar. Di Indonesia terdapat 5 pulau besar meliputi Pulau Sumatra, Pulau Jawa, Pulau Kalimantan, Pulau Sulawesi serta Pulau Papua.</item>
+        <item>Dikutip dalam buku \'Ayo Mengenal Indonesia: Sumatra 1\' oleh Munasifah, luas seluruh Pulau Sumatra adalah 473.600 kilometer persegi, hampir seluas negeri Inggris Raya. Di bagian baratnya membentang Samudra Hindia; di bagian timur dan tenggaranya Selat Malaka, Selat Karimata, dan Laut Jawa; sedangkan di bagian selatannya membentang Selat Sunda. Bentuk Pulau Sumatera memanjang dari Ulee Lheue di utara sampai Tanjung Cina di selatan, sepanjang sekitar 1.650 kilometer. Lebarnya di utara antara 100 dan 200 kilometer, sedangkan lebar bagian selatannya sekitar 350 kilometer. Dua teluknya yang terbesar adalah Semangka dan Lampung di Provinsi Lampung. Secara administratif, wilayahnya terbagi dalam satu daerah istimewa (Aceh) dan 9 provinsi (Sumatera Utara, Sumatera Barat, Bengkulu, Riau, Kepulauan Riau, Jambi, Sumatera Selatan, Lampung, Kepulauan Bangka Belitung).</item>
+        <item>Aceh diresmikan sebagai provinsi pada tanggal 7 Desember 1959. Memiliki luas wilayah 57.956,00 km persegi. Saat ini ada 5.371.532 penduduk yang menempati provinsi Aceh. Ibukota dari provinsi Aceh adalah Banda Aceh. Mayoritas agama dari penduduk Aceh adalah Islam.</item>
+        <item>Sumatera Utara diresmikan oleh pemerintah pertama kali pada tanggal 29 November 1956. Provinsi ini memiliki luas daerah sebesar 72.981,23 km persegi dengan penduduk sebanyak 15.851.851 jiwa yang mayoritas beragama Islam. Sumatera Utara menjadi provinsi dengan penduduk terbanyak di Indonesia yang menduduki peringkat keempat. Ibu kota dari Sumatera Utara adalah kota Medan.</item>
+        <item>Sumatera Selatan diresmikan oleh pemerintah pertama kali pada tanggal 14 Agustus 1960. Provinsi yang berbatasan dengan Provinsi Jambi ini memiliki luas daerah sebesar 91.592,43 km persegi dengan penduduk sebanyak 7.941.500 jiwa yang mayoritas beragama Islam. Ibu kota dari Provinsi yang terletak di bagian selatan pulau Sumatera ini memiliki kota Palembang sebagai Ibukotanya.</item>
+        <item>Sumatera Barat diresmikan oleh pemerintah pertama kali pada tanggal 9 Agustus 1957. Provinsi ini memiliki luas daerah sebesar 42.012,89 km persegi dengan penduduk sebanyak 5.131.900 jiwa yang mayoritas beragama Islam. Kota Padang sebagai kota terbesar di bagian barat Pulau Sumatera menjadi Ibu kota dari provinsi ini. Kota Padang merupakan pintu gerbang negara Indonesia dari Samudera Hindia.</item>
+        <item>Provinsi yang berada di Sumatera ini pertama kali diresmikan sebagai provinsi pada tanggal 18 November 1968. Provinsi Bengkulu memiliki Ibukota yang bernama sama, yaitu Bengkulu. Provinsi yang memiliki luas daerah sebesar 19.919,33 km persegi ini diduduki oleh sebanyak 1.884.800 jiwa dengan mayoritas memeluk agama Islam.</item>
+        <item>Provinsi Riau memiliki kota Pekanbaru sebagai Ibukotanya. Provinsi yang lahir pada tanggal 9 Agustus 1957 ini berada di bagian tengah pantai Timur kepulauan Sumatera. Penduduk dari provinsi Riau sebanyak 60% nya menganut agama Islam. Provinsi Riau memiliki luas daerah sebesar 50.058,16 km persegi dengan penduduk sebanyak 3.344.400 jiwa.</item>
+        <item>Provinsi Kepulauan Riau adalah provinsi Indonesia yang berbatasan dengan Kamboja Utara dan Vietnam. Provinsi Kepulauan Riau memiliki kota Tanjungpinang sebagai Ibukotanya. Provinsi ini pertama kali diresmikan oleh pemerintah pada tanggal 25 Oktober tahun 2002. Penduduk yang menempati Kepulauan Riau berjumlah 1.917.415 jiwa dengan mayoritas memeluk agama Islam. kepulauan Riau memiliki luas daerah sebesar 8.201,72 km persegi.</item>
+        <item>Provinsi Jambi memiliki Ibukota yang bernama sama dengan provinsinya yaitu, Jambi. Pertama kali diresmikan oleh pemerintah pada tanggal 9 Agustus 1957. Provinsi Jambi memiliki luas daerah sebesar 50.058,16 km persegi dengan penduduk sebanyak 3.344.400 jiwa. 65% dari penduduk Provinsi Jambi menganut agama Islam.</item>
+        <item>Lampung lahir pada tanggal 18 Maret 1964. Provinsi yang terletak di Selatan Pulau Sumatera ini memiliki Ibukota di kota Bandar Lampung. Provinsi Lampung mempunyai dua kota, Kota Bandar Lampung dan Kota Metro. Provinsi Lampung memiliki luas daerah sebesar 34.623,80 km persegi dengan penduduk sebanyak 8.026.191 jiwa. Mayoritas dari penduduk Lampung memeluk agama Islam.</item>
+        <item>Kepulauan Bangka Belitung diresmikan pada tanggal 21 November tahun 2000. Memiliki luas daerah 16.424,05 km persegi dengan penduduk sebanyak 1.343.900 jiwa. Ibukota dari Bangka Belitung adalah Pangkalpinang. Setengah penduduk Bangka Belitung memeluk agama Islam.</item>
+        <item>Pulau yang sebagian besar masih terdiri hutan dan menjadi habitat bagi sejumlah tumbuhan serta satwa endemik ini memiliki luas sekitar 743.330 km persegi. Pulau Kalimantan memiliki batas laut sebelah Barat dengan Selat Karimata, sebelah Timur dengan Selat Makassar, sebelah Selatan dengan Laut Jawa, dan sebelah Utara dengan Laut China Selatan.</item>
+        <item>Kota Pontianak adalah Ibukota dari Provinsi Kalimantan Barat. Kalimantan Barat pertama kali diresmikan sebagai provinsi oleh pemerintah pada tanggal 7 Desember 1956. Provinsi yang terletak di sebelah barat pulau Kalimantan ini memiliki luas daerah sebesar 147.307,00 km persegi yang ditempati oleh sebanyak 4.716.093 jiwa. Setengah penduduk Kalimantan Barat menganut agama Islam. Kalimantan Barat menduduki peringkat keempat sebagai provinsi terbesar di Indonesia.</item>
+        <item>Kalimantan Timur adalah Provinsi Indonesia yang berbatasan dengan Negara Malaysia. Ibukota dari Provinsi Kalimantan Timur adalah Samarinda. Pertama kali diresmikan oleh Pemerintah pada 2 Juli 1958. Kalimantan Timur memiliki luas daerah sebesar 129.066,64 km persegi dengan penduduk sebanyak 3.351.432 yang kebanyakan memeluk agama Islam.</item>
+        <item>Provinsi Kalimantan Selatan lahir pada tanggal 7 Desember 1956. Kalimantan Selatan memiliki populasi penduduk sebanyak 3.922.790 dengan luas daerah sebesar 38.744,23 km persegi. 98% dari penduduk provinsi Kalimantan Selatan memeluk agama Islam. Provinsi Kalimantan Selatan memiliki kota Banjarmasin sebagai ibukotanya.</item>
+        <item>Palangkaraya adalah Ibukota dari Provinsi Kalimantan tengah. Kalimantan tengah pertama kali diresmikan sebagai provinsi pada tanggal 2 Juli 1958. Provinsi ini memiliki luas daerah sebesar 153.564,50 yang ditempati oleh sebanyak 2.439.858 jiwa. Sebagian besar penduduk Kalimantan Tengah menganut agama Islam.</item>
+        <item>Kalimantan Utara (disingkat Kaltara) adalah sebuah provinsi di Indonesia yang terletak di bagian utara Pulau Kalimantan. Provinsi ini berbatasan langsung dengan negara tetangga Malaysia, yaitu Negara Bagian Sabah dan Sarawak. Pusat pemerintahan Kalimantan Utara saat ini berada di Kota Tanjung Selor, bersama dengan pusat pemerintahan Kabupaten Bulungan. Provinsi ini memiliki luas daerah 75.467,70 km2 dengan penduduk sebanyak 688.426 jiwa </item>
+        <item>Meski menjadi tumpuan perputaran ekonomi utama di Indonesia, namun luas Pulau Jawa bukanlah yang terbesar di Indonesia. Berdasarkan peta, Pulau Jawa diperkirakan mencapai 128,297 km² dengan enam provinsi dan pulau-pulau kecil di sekitarnya. Provinsi di Pulau Jawa adalah DKI Jakarta, Jawa Barat, Jawa Tengah, DI Yogyakarta, Jawa Timur, dan Banten. Adapun batas daratan bagian utara yakni Laut Jawa dan Pulau Kalimantan, batas selatan yakni Samudera Hindia, batas Barat yakni Pulau Sumatera, dan batas Timur yakni Pulau Bali. Sementara batas perairan terdapat batas Utara yakni Laut Jawa, batas Selatan yakni Samudera Hindia, batas Barat yakni Selat Sunda, dan batas Timur yakni Selat Bali.</item>
+        <item>Banten adalah provinsi yang memiliki Ibukota Serang. Provinsi Banten memiliki penduduk sebanyak 11.704.877 jiwa dengan mayoritas memeluk agama Islam. Provinsi ini mulai diresmikan oleh Pemerintah pada tanggal 4 Oktober tahun 2000. Provinsi Banteng memiliki luas daerah sebesar 9.662,92 km persegi.</item>
+        <item>Daerah Khusus Ibukota Jakarta adalah Ibukota dari negara Indonesia. Kota Jakarta merupakan kota yang satu tingkat dengan provinsi. Jakarta menjadi kota terbesar di Indonesia. Ibukota Jakarta lahir pada tanggal 28 Agustus 1961. provinsi ini memiliki luas wilayah sebesar 664,01 km persegi dengan 10.012.271 jiwa yang menempati Ibu Kota Jakarta.</item>
+        <item>Ibukota dari Provinsi Jawa Barat adalah kota Bandung yang menjadi kota metropolitan terbesar di Provinsi Jawa Barat. Provinsi Jawa Barat pertama kali diresmikan pada tanggal 4 Juli 1950. Penduduk yang ada di Jawa Barat sebanyak 48. 274.162 jiwa dan mayoritas menganut agama Islam. Provinsi Jawa Barat memiliki luas daerah sebesar 35.377,76 km persegi.</item>
+        <item>Provinsi Jawa Tengah diresmikan oleh pemerintah sebagai provinsi pada tangga; 4 Maret 1950. Jawa Tengah memiliki Semarang sebagai Ibukotanya. Provinsi Jawa Tengah ditempati oleh 3.553.100 penduduk dengan luas daerah sebesar 3.133,15 km persegi.  85% Penduduk dari Provinsi Jawa Tengah memeluk agama Islam</item>
+        <item>Daerah Istimewa Yogyakarta merupakan peleburan dari Negara Kesultanan Yogyakarta dan Kadipaten pakuAlaman. Provinsi yang berada di selatan pulau Jawa ini pertama kali diresmikan oleh pemerintah pada tanggal 4 Maret 1950. Daerah Istimewa Yogyakarta memiliki penduduk sebanyak 3.553.100 jiwa dengan mayoritas pemeluk agama Islam. Provinsi di Jawa ini memiliki luas daerah sebesar 3.133,15 km persegi. Kota Yogyakarta menjadi pusat pemerintahan sekaligus Ibukota dari provinsi daerah Istimewa Yogyakarta. Selain itu, Kota Yogyakarta adalah salah satu kota terbesar di Indonesia.</item>
+        <item>Ibukota dari Provinsi Jawa Timur adalah Surabaya. Provinsi Jawa Timur pertama kali diresmikan pada tanggal 4 Juli 1950. Penduduk yang ada di Jawa Timur sebanyak 38.610.202 jiwa dan mayoritas menganut agama Islam. Provinsi Jawa Timur memiliki luas daerah sebesar 37.799,75 km persegi.</item>
+        <item>Kepulauan Nusa Tenggara atau Kepulauan Sunda Kecil[1] (sekarang kadang kala digunakan dalam peta-peta geografis dunia), adalah gugusan pulau-pulau di sebelah timur Pulau Jawa, dari Pulau Bali di sebelah barat, hingga Pulau Timor di sebelah timur.[2] Kepulauan Barat Daya dan Kepulauan Tanimbar yang merupakan bagian dari wilayah Provinsi Maluku secara geologis juga termasuk dalam kepulauan Nusa Tenggara. Secara administratif, sebagian besar Kepulauan Nusa Tenggara termasuk wilayah negara Indonesia, kecuali bagian timur Pulau Timor dan pulau-pulau kecil di sekitarnya yang termasuk wilayah negara Timor Leste. Di awal kemerdekaan Indonesia, kepulauan ini merupakan suatu provinsi tunggal bernama Provinsi Sunda Kecil yang berganti nama menjadi Provinsi Nusa Tenggara pada tahun 1954,[3] yang beribu kota di kota Singaraja. Pada tahun 1975, wilayah ujung timur Kepulauan Nusa Tenggara di bagian timur Pulau Timor diintegrasikan ke dalam negara Indonesia menjadi Provinsi Timor Timur hingga memperoleh kemerdekaannya tahun 2002. Kepulauan ini kini terdiri atas 3 provinsi di Indonesia (berturut-turut dari barat): Bali; Nusa Tenggara Barat; dan Nusa Tenggara Timur, serta 13 distrik milik negara Timor Leste.</item>
+        <item>Provinsi Bali memiliki Ibukota yang bernama Denpasar. Bali mulai diresmikan sebagai provinsi pada tanggal 14 Agustus 1958. Saat ini populasi di Provinsi Bali ada 4.104.900 jiwa dengan luas daerah 5.780,06 km persegi. Mayoritas penduduk Bali memeluk agama Hindu.</item>
+        <item>Nusa Tenggara Timur diduduki oleh penduduk sebanyak 5.325.566 jiwa dengan mayoritas memeluk agama Kristen. Ibu kota dari Provinsi Nusa Tenggara Timur adalah kota Kupang. Nusa Tenggara Timur memiliki 22 kabupaten/kota dengan total luas daerah 48.718,10 km persegi. Provinsi yang berada di kepulauan Nusa Tenggara ini pertama kali diresmikan pada tanggal 14 Agustus 1958.</item>
+        <item>Nusa Tenggara Barat diduduki oleh penduduk sebanyak 4.773.795 jiwa dengan mayoritas memeluk agama Islam. Ibu kota dari Provinsi Nusa Tenggara Barat adalah kota Mataram. Nusa Tenggara Barat memiliki 12 kabupaten/kota dengan total luas daerah 18.572,32 km persegi. Provinsi yang berada di kepulauan Nusa Tenggara ini pertama kali diresmikan pada tanggal 14 Agustus 1958.</item>
+        <item>Pulau Sulawesi memiliki luas mencapai 174.600 km². Dengan luas ini, ada enam provinsi yang berdiri di dalamnya, yakni Sulawesi Selatan, Sulawesi Tengah, Sulawesi Tenggara, Sulawesi Utara, Sulawesi Barat, dan Gorontalo. Berdasarkan data Badan Pusat Statistik (BPS) yang dirilis tahun 2018, penduduk di Pulau Sulawesi mencapai 19 juta jiwa. Angka tersebut berasal dari provinsi Sulawesi Selatan sebanyak 8,8 juta, Sulawesi Tengah 3 juta, Sulawesi Tenggara 2,6 juta, Sulawesi Utara 2,4 juta, Sulawesi Barat 1,3 juta, dan Gorontalo sebanyak 1,1 juta.</item>
+        <item>Provinsi Gorontalo diduduki oleh 1.115.633 jiwa dan memiliki luas daerah sebesar 11.257,07 km persegi. Gorontalo memiliki Ibu kota dengan nama yang sama yaitu kota Gorontalo. Provinsi ini memiliki julukan serambi madinah dengan penduduk yang mayoritas memeluk agama Islam. Provinsi Gorontalo lahir pada 22 Desember 2000.</item>
+        <item>Provinsi yang berada di bagian barat pulau Sulawesi ini pertama kali diresmikan oleh pemerintah sebagai provinsi Indonesia yang ke-33 pada tanggal 5 Oktober tahun 2004. Provinsi Sulawesi Barat memiliki kota Mamuju sebagai Ibukotanya. Provinsi yang memiliki luas daerah sebesar 16.787,18 km persegi ini diduduki oleh sebanyak 1.258.090 jiwa dengan mayoritas memeluk agama Islam.</item>
+        <item>Provinsi Sulawesi Selatan pertama kali diresmikan sebagai provinsi pada tanggal 13 Desember 1960. Provinsi yang terletak di bagian selatan pulau Sulawesi ini memiliki kota Makassar sebagai Ibukota dan pusat pemerintahannya. Provinsi Sulawesi Selatan memiliki populasi penduduk sebanyak 8.432.163 jiwa yang mayoritas memeluk agama Islam. Provinsi Sulawesi Selatan memiliki luas daerah sebesar 46.717,48 km persegi.</item>
+        <item>Provinsi Sulawesi Utara lahir pada tanggal 13 Desember 1960. Provinsi yang terletak di bagian utara pulau Sulawesi ini memiliki kota Manado sebagai Ibukotanya. Provinsi yang berbatasan dengan laut Maluku dan Samudera Pasifik ini memiliki penduduk sebanyak 2.386.604 jiwa yang mayoritas memeluk agama Kristen. Provinsi Sulawesi Utara memiliki luas daerah sebesar 13.851,64 km persegi.</item>
+        <item>Sulawesi Tengah pertama kali diresmikan sebagai provinsi pada tanggal 23 September 1964. Ibukota dari Provinsi Sulawesi Tengah adalah Kota Palu. Ditempati oleh 2.831.283 penduduk, mayoritas dari penduduk Sulawesi Tengah menganut agama Islam. Sulawesi tengah adalah salah satu provinsi yang memiliki wilayah paling luas di antara provinsi lainnya di Pulau Sulawesi dengan luas daerah sebesar 61.841,29 km persegi.</item>
+        <item>Provinsi yang berada di bagian tenggara pulau Sulawesi ini pertama kali diresmikan oleh pemerintah sebagai provinsi pada tanggal 23 September tahun 1964. Provinsi Sulawesi Tenggara memiliki Ibukota kendari. Provinsi yang memiliki luas daerah sebesar 39.067,70 km persegi ini diduduki oleh sebanyak 2.448.081 jiwa dengan mayoritas memeluk agama Islam.</item>
+        <item>Kepulauan Maluku adalah sekelompok pulau di Indonesia yang merupakan bagian dari Nusantara. Kepulauan Maluku terletak di lempeng Eurasia dan Pasifik. Ia berbatasan dengan Pulau Sulawesi di sebelah barat, Nugini di timur, dan Timor Leste di sebelah selatan, Palau di timur laut. Pada zaman dahulu, bangsa Eropa menamakannya "Kepulauan rempah–rempah" — istilah ini juga merujuk kepada Kepulauan Zanzibar yang terletak di pantai Afrika Timur. Sejak 1950 – 1999, Kepulauan Maluku Utara secara administratif merupakan bagian dari Provinsi Maluku. Kabupaten Maluku Utara kemudian ditetapkan sebagai Provinsi Maluku Utara.</item>
+        <item>Maluku Utara (disingkat Malut) merupakan provinsi bagian Timur Indonesia yang resmi terbentuk pada 4 Oktober 1999 yang sebelumnya menjadi kabupaten dari Provinsi Maluku bersama dengan Halmahera Tengah, berdasarkan UU RI Noor 46 Tahun 1999 dan UU RI Nomor Tahun 2003. Jumlah penduduk Maluku Utara pada tahun 2020 mencapai 1.305.828 jiwa, dengan kepadatan penduduk sebanyak 41 jiwa/km2. Saat awal pendirian Provinsi Maluku Utara, ibu kota ditempatkan di Kota Ternate berlokasi di kaki Gunung Gamalama dalam kurun waktu kurang lebih 11 tahun, hingga pada 4 Agustus 2010 setelah adanya masa transisi dan persiapan pembangunan, Maluku Utara memindahkan ibukota Maluku Utara ke Sofifi, salah satu kelurahan di Oba Utara, kota Tidore Kepulauan. Kelurahan Sofifi letaknya berada di Pulau Halmahera, pulau terbesar di Maluku Utara.</item>
+        <item>Maluku memiliki kota Ambon sebagai Ibukotanya. Provinsi Maluku berada di antara perbatasan Laut Seram dan Samudra Hindia. Provinsi yang berada di bagian selatan Kepulauan Maluku ini memiliki luas daerah sebesar 46.914,03 km persegi dengan penduduk sebanyak 1.675.409 jiwa yang sebagian besar penduduknya menganut agama Kristen. Provinsi Maluku pertama kali diresmikan oleh pemerintah pada tanggal 17 Juni 1958.</item>
+        <item>Luas pulau Papua tercatat mencapai 786.000 km² namun yang menjadi bagian Indonesia hanya sebesar 418.707,7 km². Sedangkan sisanya menjadi bagian dari Papua Nugini. Pulau ini menjadi salah satu dari 5 pulau terbesar di dunia. Menurut buku Ekologi Papua oleh Yayasan Pustaka Obor Indonesia dan Conservation International, luas wilayah Papua merupakan pulau yang sangat mendukung hutan rimba tropis tua terluas yang masih ada di Asia Pasifik. Di bagian paling barat, Papua didominasi oleh jajaran pegunungan kecil (Kepala Burung, Wandamen, Fakfak, Kumawa) dan kepulauan (Raja Ampat, Teluk Cenderawasih). Dalam banyak hal, Papua mirip dengan daratan Papua Nugini (PNG) tetapi gunung–gunungnya lebih tinggi (mencapai garis salju), rawa–rawanya lebih luas (contohnya, Mamberamo, Asmat). Pulau Papua merupakan habitat bagi 15.000–20.000 jenis tumbuhan (55% endemik), 602 jenis burung (52% endemik), 125 jenis mamalia (58% endemik), dan 223 jenis reptilia (35% endemik). Binatang dan tumbuhan endemik ini mencakup burung cenderawasih, kanguru pohon, ikan pelangi, beragam kupu-kupu dan ribuan tumbuhan dan binatang lainnya.</item>
+        <item>Provinsi Papua Barat mencakup wilayah Semennajung Domberai dan Kepulauan Raja Ampat. Provinsi Papua Barat memiliki Ibukota yang terletak di kota Manokwari dan memiliki kota Sorong sebagai kota yang paling besar di Papua Barat. Provinsi Papua Barat memiliki penduduk sebanyak 849.809 dengan mayoritas memeluk agama kristen. Ibukota dari Provinsi Papua adalah kota Jayapura. Provinsi yang lahir pada tanggal 4 Oktober 1999 ini memiliki luas daerah sebesar 6.570,74 km persegi.</item>
+        <item>Provinsi Papua awalnya memiliki nama Irian Jaya. Bagian timur dari Provinsi Papua adalah negara Papua Nugini. Provinsi Papua memiliki penduduk sebanyak 3.091.047 dengan mayoritas memeluk agama kristen. Ibukota dari Provinsi Papua adalah kota Jayapura. Provinsi yang lahir pada tanggal 10 September 1969 ini memiliki luas daerah sebesar 319.036,05 km persegi.</item>
+
+    </string-array>
+
+    <!-- identifikasi -->
+
+    <!-- Foto/gambar -->
+    <array name="photo_logonya">
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/aceh_logo</item>
+        <item>@drawable/sumut_logo</item>
+        <item>@drawable/sumsel_logo</item>
+        <item>@drawable/sumbar_logo</item>
+        <item>@drawable/bengkulu_logo</item>
+        <item>@drawable/riau_logo</item>
+        <item>@drawable/kepriau_logo</item>
+        <item>@drawable/jambi_logo</item>
+        <item>@drawable/lampung_logo</item>
+        <item>@drawable/babel_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/kalbar_logo</item>
+        <item>@drawable/kaltim_logo</item>
+        <item>@drawable/kalsel_logo</item>
+        <item>@drawable/kaltengah_logo</item>
+        <item>@drawable/kalut_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/banten_logo</item>
+        <item>@drawable/dki_logo</item>
+        <item>@drawable/jabar_logo</item>
+        <item>@drawable/jateng_logo</item>
+        <item>@drawable/diy_logo</item>
+        <item>@drawable/jatim_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/bali_logo</item>
+        <item>@drawable/ntt_logo</item>
+        <item>@drawable/ntb_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/gorontalo_logo</item>
+        <item>@drawable/sulbar_logo</item>
+        <item>@drawable/sulsel_logo</item>
+        <item>@drawable/sulut_logo</item>
+        <item>@drawable/sultengah_logo</item>
+        <item>@drawable/sultenggara_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/malukutara_logo</item>
+        <item>@drawable/maluku_logo</item>
+        <item>@drawable/nkri_logo</item>
+        <item>@drawable/papuabar_logo</item>
+        <item>@drawable/papua_logo</item>
+
+    </array>
+
+    <!-- Foto/gambar -->
+    <array name="photo_pulaunya">
+        <item>@drawable/nkri</item>
+        <item>@drawable/pul_sumatera</item>
+        <item>@drawable/aceh</item>
+        <item>@drawable/sumut</item>
+        <item>@drawable/sumsel</item>
+        <item>@drawable/sumbar</item>
+        <item>@drawable/bengkulu</item>
+        <item>@drawable/riau</item>
+        <item>@drawable/kepriau</item>
+        <item>@drawable/jambi</item>
+        <item>@drawable/lampung</item>
+        <item>@drawable/babel</item>
+        <item>@drawable/pul_kalimantan</item>
+        <item>@drawable/kalbar</item>
+        <item>@drawable/kaltim</item>
+        <item>@drawable/kalsel</item>
+        <item>@drawable/kaltengah</item>
+        <item>@drawable/kalut</item>
+        <item>@drawable/pul_jawa</item>
+        <item>@drawable/banten</item>
+        <item>@drawable/dki</item>
+        <item>@drawable/jabar</item>
+        <item>@drawable/jateng</item>
+        <item>@drawable/diy</item>
+        <item>@drawable/jatim</item>
+        <item>@drawable/kep_bali_nt</item>
+        <item>@drawable/bali</item>
+        <item>@drawable/ntt</item>
+        <item>@drawable/ntb</item>
+        <item>@drawable/pul_sulawesi</item>
+        <item>@drawable/gorontalo</item>
+        <item>@drawable/sulbar</item>
+        <item>@drawable/sulsel</item>
+        <item>@drawable/sulut</item>
+        <item>@drawable/sultengah</item>
+        <item>@drawable/sultenggara</item>
+        <item>@drawable/kep_maluku</item>
+        <item>@drawable/malukutara</item>
+        <item>@drawable/maluku</item>
+        <item>@drawable/pul_papua</item>
+        <item>@drawable/papuabar</item>
+        <item>@drawable/papua</item>
+
+    </array>
+
+</resources>

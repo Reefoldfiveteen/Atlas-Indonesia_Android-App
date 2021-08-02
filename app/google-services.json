@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36693171264",
+    "project_id": "atlas-indonesia",
+    "storage_bucket": "atlas-indonesia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36693171264:android:a7c68e4f11bd2ebd11d3a5",
+        "android_client_info": {
+          "package_name": "com.reefii.atlasindonesia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36693171264-ssk1rgjiqo8ula82ioir48maenunlm8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9JRY4Yg02Hs7WOcALgzaFlY0mPEkTUeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36693171264-ssk1rgjiqo8ula82ioir48maenunlm8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
