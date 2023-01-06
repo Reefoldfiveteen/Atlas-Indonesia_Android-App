@@ -34,6 +34,15 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    //ADD Jetpack Compose for Migration prep
+    buildFeatures {
+        //...
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.3.2"
+    }
 }
 
 dependencies {
@@ -62,6 +71,17 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     //implement TouchView untuk membantu perbesaran gambar peta
     implementation 'com.github.MikeOrtiz:TouchImageView:3.1.0'
+    // Implement for jetpack compose migration
+    // Compose
+    implementation "androidx.compose.runtime:runtime:$rootProject.composeVersion"
+    implementation "androidx.compose.ui:ui:$rootProject.composeVersion"
+    implementation "androidx.compose.foundation:foundation:$rootProject.composeVersion"
+    implementation "androidx.compose.foundation:foundation-layout:$rootProject.composeVersion"
+    implementation "androidx.compose.material:material:$rootProject.composeVersion"
+    implementation "androidx.compose.runtime:runtime-livedata:$rootProject.composeVersion"
+    implementation "androidx.compose.ui:ui-tooling:$rootProject.composeVersion"
+    implementation "com.google.accompanist:accompanist-themeadapter-material:$rootProject.accompanistVersion"
+    //...
 
 
 }

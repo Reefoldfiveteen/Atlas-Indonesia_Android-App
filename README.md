@@ -1,3 +1,5 @@
+# 2023 UPDATE: UI MIGRATE TO ANDROID JETPACK COMPOSE
+
 # ID
 # Atlas-Indonesia_Android-App
 Atlas indonesia - Submission Aplikasi Android-Belajar Membuat Aplikasi Android untuk Pemula-Dicoding
