@@ -2,7 +2,8 @@
 <!--Arif Purnomo Aji-->
 <!--GIT COMMIT TEST-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.reefii.atlasindonesia" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.reefii.atlasindonesia">
 
     <application
         android:allowBackup="true"
@@ -26,13 +27,16 @@
         <!-- Splashscreen-activity -->
         <activity
             android:name=".Splash_Atlasin"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"
+            tools:node="merge">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <!-- kodepembantu -->
         <activity
@@ -64,12 +68,16 @@
         </service>
 
         <!-- Firebase Messaging Cloud -->
-        <service android:name=".layanan_pesan_firebase" >
+
+        <service android:name=".layanan_pesan_firebase"
+            android:exported="true"
+            tools:node="merge">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>

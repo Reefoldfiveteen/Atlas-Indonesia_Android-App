@@ -43,7 +43,7 @@ open class kodepembantu: AppCompatActivity() {
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
         intent.addCategory(Intent.CATEGORY_BROWSABLE)
-        intent.data = Uri.parse("https://atlas.big.go.id/eatlas1/Ebook")
+        intent.data = Uri.parse("https://atlas.big.go.id/#/ebook")
         startActivity(intent)
     }
 
