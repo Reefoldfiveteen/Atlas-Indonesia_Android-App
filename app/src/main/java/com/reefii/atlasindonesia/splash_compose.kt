@@ -23,8 +23,7 @@ fun splash_compose() {
     MaterialTheme {
 // Material Components like Button, Card, Switch, etc.
     val imageModifier = Modifier
-        .fillMaxWidth()
-        .fillMaxHeight()
+        .width(IntrinsicSize.Max)
 
         Image(
             painter = painterResource(R.drawable.atlasin),

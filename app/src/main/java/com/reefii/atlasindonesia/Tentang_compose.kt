@@ -38,7 +38,9 @@ fun Tentang_compose() {
     MaterialTheme {
         // Material Components like Button, Card, Switch, etc.
 
-        Column(modifier = Modifier.fillMaxSize(),
+        Column(
+            modifier = Modifier
+                .fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
 
@@ -53,7 +55,7 @@ fun Tentang_compose() {
                 painter = painterResource(R.drawable.profile),
                 contentDescription = "profile",
                 contentScale = ContentScale.Crop,            // crop the image if it's not a square
-                modifier = Modifier
+                modifier = imageModifier
                     .size(120.sdp)
                     .clip(CircleShape)                       // clip to the circle shape
                     .border(2.sdp, Color.Gray, CircleShape)   // add a border (optional)

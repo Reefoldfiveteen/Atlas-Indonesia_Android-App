@@ -16,7 +16,7 @@ import com.reefii.atlasindonesia.R
 import ir.kaaveh.sdpcompose.sdp
 import ir.kaaveh.sdpcompose.ssp
 
-@Preview
+@Preview (showBackground = true)
 @Composable
 fun langchang_compose() {
     MaterialTheme {
@@ -28,7 +28,7 @@ fun langchang_compose() {
 
         ) {
             Text(stringResource(R.string.pengaturanmain),
-                color = Color.White,
+                //color = Color.White,
                 fontSize = 20.ssp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier

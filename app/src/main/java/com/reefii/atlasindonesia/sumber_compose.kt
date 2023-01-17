@@ -30,7 +30,7 @@ import com.reefii.atlasindonesia.R
 import ir.kaaveh.sdpcompose.sdp
 import ir.kaaveh.sdpcompose.ssp
 
-@Preview
+@Preview (showBackground = true)
 @Composable
 fun sumber_compose() {
     MaterialTheme {
