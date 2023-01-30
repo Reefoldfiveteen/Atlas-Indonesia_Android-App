@@ -90,7 +90,7 @@ fun detil_compose() {
                     textAlign = TextAlign.Center,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
-                        .padding(15.sdp) // bottom margin
+                        .padding(5.sdp) // bottom margin
                         .align(TopCenter)
 
                 )
@@ -100,7 +100,7 @@ fun detil_compose() {
                     fontSize = 11.ssp,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
-                        .padding(30.sdp) // bottom margin
+                        .padding(20.sdp) // bottom margin
                         .align(TopCenter)
                 )
             }
@@ -117,7 +117,7 @@ fun detil_compose() {
                     textAlign = TextAlign.Center,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
-                        .padding(15.sdp) // bottom margin
+                        .padding(5.sdp) // bottom margin
                         .align(TopCenter)
                 )
 
@@ -126,7 +126,7 @@ fun detil_compose() {
                     fontSize = 10.ssp,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
-                        .padding(30.sdp) // bottom margin
+                        .padding(20.sdp) // bottom margin
                         .align(TopCenter)
                 )
 
