@@ -8,18 +8,19 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@Preview (showBackground = true)
+//@Preview (showBackground = true)
 @Composable
-fun DetailKontensrt() {
+fun DetailKontensrt(navigateToProfile: (Item_Atlasin) -> Unit)  {
 
-    val employees = remember { data_atlas.Provinsi_Lists }
+    val atlasindo = remember { DataProvider.Item_Atlasin }
     LazyColumn(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
     ) {
         items(
-            employees
-        ) {
-            EmployeeCard(emp = it)
-        }
+            items = atlasindo,
+            itemContent = {
+                AtlasCard(petaaa = it, navigateToProfile)
+            })
     }
+
 }

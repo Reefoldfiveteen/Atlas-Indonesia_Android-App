@@ -2,34 +2,30 @@
 package com.reefii.atlasindonesia
 
 //import plugin yg diperlukan
+
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.provider.Settings.Global.getString
 import android.view.*
 import android.view.animation.OvershootInterpolator
 import android.widget.Toast
-import android.window.SplashScreen
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AlertDialog
 import androidx.compose.animation.core.tween
-import androidx.compose.compiler.plugins.kotlin.EmptyFunctionMetrics.composable
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -38,20 +34,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.navigation
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import ir.kaaveh.sdpcompose.ssp
-import kotlinx.coroutines.delay
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import kotlinx.coroutines.delay
 
 
 //mulai main activity
 class MainActivity : kodepembantu() {
-
-    //smutable data
-////////-    private var itemData: MutableList<Item_data> = mutableListOf()
 
     //oncreate
     @RequiresApi(Build.VERSION_CODES.N)
@@ -60,46 +49,20 @@ class MainActivity : kodepembantu() {
         loadLocale()
         checkTheme()
 
-
-        //XML Layout use
-        //setContentView(R.layout.activity_main)
         //migrate to composable
         setContent {
+            MaterialTheme{
             //Surface(color = Color.White, modifier = Modifier.fillMaxSize()) {
-                Navigation()
+                Navigation{startActivity(Intent(this, Detail_Compose::class.java))}
                 //DetailKonten()
+            }
+
 
         }
 
-        ////////-    val list = findViewById<RecyclerView>(R.id.namee_list)
-        ////////- initData()
-
-        //load data array
-        ////////- list.layoutManager = LinearLayoutManager(this)
-        ////////- list.adapter = RecyclerViewAdapter(this, itemData) {
-            //load array data untuk persiapan transfer ke view detail
-        ////////-     val name = it.name
-        ////////-     val rank = it.nourut
-        ////////- val detail = it.detail
-        ////////- val image = it.imagelogodaerah
-        ////////- val imagepul = it.imagepul
-            //transfer data yang dipilih user ke detail view
-        ////////- val moveDetail = Intent(this, Tampilan_Detail::class.java)
-        ////////- moveDetail.putExtra(Tampilan_Detail.EXTRA_NAME, name)
-        ////////- Tampilan_Detail.EXTRA_IMG_LOGO = image
-        ////////- Tampilan_Detail.EXTRA_IMG_PULAU = imagepul
-        ////////- moveDetail.putExtra(Tampilan_Detail.EXTRA_URUTAN, rank)
-        ////////- moveDetail.putExtra(Tampilan_Detail.EXTRA_IDENTITY, detail)
-            //tampilkan toast array yang dipilih user
-        ////////- val toast = Toast.makeText(applicationContext, it.name, Toast.LENGTH_SHORT)
-        ////////- toast.show()
-        ////////- startActivity(moveDetail)
-        ////////- }
-
-
     }
     @Composable
-    fun Navigation() {
+    fun Navigation(navigateToProfile: (Item_Atlasin) -> Unit) {
         val navController = rememberNavController()
         NavHost(navController = navController,
             startDestination = "splash_screen") {
@@ -108,10 +71,11 @@ class MainActivity : kodepembantu() {
             }
             // Main Screen
             composable("main_screen") {
-                DetailKonten()
+                DetailKonten(navigateToProfile = navigateToProfile)
             }
         }
     }
+
     @Composable
     fun SplashScreen(navController: NavController) {
         val scale = remember {
@@ -209,53 +173,39 @@ class MainActivity : kodepembantu() {
     }
 
     //composable view
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     @OptIn(ExperimentalMaterial3Api::class)
-    @Preview(showBackground = true)
+    //@Preview(showBackground = true)
     @Composable
-    fun DetailKonten() {
+    fun DetailKonten(navigateToProfile: (Item_Atlasin) -> Unit) {
 
         Column() {
 
             //Loading Top App Bar
             TopBarrr()
 
+            //Initiate Data from String.XML
+            Scaffold(
+                content = {
+                    //AtlasListContent()
+                    val atlasindo = remember { DataProvider.Item_Atlasin }
+                    LazyColumn(
+                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
+                    ) {
+                        items(
+                            items = atlasindo,
+                            itemContent = {
+                                AtlasCard(petaaa = it, navigateToProfile)
+                            })
+                    }
 
-            //initiate data
-            val employees = remember { data_atlas.Provinsi_Lists }
-            LazyColumn(
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
-            ) {
-                items(
-                    employees
-                ) {
-                    EmployeeCard(emp = it)
                 }
-            }
+            )
         }
 
     }
 
 
-    //init data ke tampilan xml
-    ////////- private fun initData() {
-    ////////- val name = resources.getStringArray(R.array.nameea)
-    ////////- val rank = resources.getStringArray(R.array.urutannya)
-    ////////- val detail = resources.getStringArray(R.array.detaillnya)
-    ////////- val image = resources.obtainTypedArray(R.array.photo_logonya)
-    ////////- val imagepulau = resources.obtainTypedArray(R.array.photo_pulaunya)
-    ////////- itemData.clear()
-    ////////- for (i in name.indices) {
-    ////////- itemData.add(Item_data(
-    ////////-       name[i],
-    ////////-       rank[i],
-    ////////-       detail[i],
-    ////////-       image.getResourceId(i, 0),
-    ////////-       imagepulau.getResourceId(i, 0),
-    ////////- ))
-    ////////- }
-    ////////- image.recycle()
-    ////////- imagepulau.recycle()
-    ////////- }
 
     //menambah pilihan option menu
     //-//-override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -309,6 +259,7 @@ class MainActivity : kodepembantu() {
         intent.putExtra(Intent.EXTRA_TEXT, lamdasasa)
         startActivity(Intent.createChooser(intent, "Share with:"))
     }
+
 
 
 }

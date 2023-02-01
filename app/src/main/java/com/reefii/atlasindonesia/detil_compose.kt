@@ -76,7 +76,7 @@ fun detil_compose() {
                 .padding(5.sdp)
 
             Image(
-                painter = painterResource(R.drawable.profile),
+                painter = painterResource(R.drawable.diy_logo),
                 contentDescription = "profile",
                 contentScale = ContentScale.Crop,            // crop the image if it's not a square
                 modifier = imageModifierr
@@ -157,7 +157,7 @@ fun detil_compose() {
                                 rotationZ = rotationState.value
                             ),
                         contentDescription = null,
-                        painter = painterResource(R.drawable.papua)
+                        painter = painterResource(R.drawable.diy)
                     )
 
                 }
