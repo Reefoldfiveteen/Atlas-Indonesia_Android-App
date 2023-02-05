@@ -17,9 +17,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -29,13 +27,15 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.reefii.atlasindonesia.ui.theme.AtlasDarkTheme
 import kotlinx.coroutines.delay
 
 
@@ -46,21 +46,33 @@ class MainActivity : kodepembantu() {
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         loadLocale()
         checkTheme()
 
         //migrate to composable
         setContent {
-            MaterialTheme{
+            AtlasDarkTheme(){
+            //AtlasDarkTheme() {
             //Surface(color = Color.White, modifier = Modifier.fillMaxSize()) {
-                Navigation{startActivity(Intent(this, Detail_Compose::class.java))}
-                //DetailKonten()
+                Navigation{
+                    //startActivity(Intent(this, Detail_Compose::class.java))
+                    val toast = Toast.makeText(applicationContext, it.namep, Toast.LENGTH_SHORT)
+                        //Toast.makeText(applicationContext, it.namep, Toast.LENGTH_SHORT)
+                    toast.show()
+                    //startActivity(zoom_gambar.newIntent(this, it))
+                    startActivity(Detail_Compose.newIntent(this, it))
+
+                }
+            //DetailKonten()
             }
-
-
         }
 
+
     }
+
+
+    @RequiresApi(Build.VERSION_CODES.N)
     @Composable
     fun Navigation(navigateToProfile: (Item_Atlasin) -> Unit) {
         val navController = rememberNavController()
@@ -72,7 +84,9 @@ class MainActivity : kodepembantu() {
             // Main Screen
             composable("main_screen") {
                 DetailKonten(navigateToProfile = navigateToProfile)
+
             }
+
         }
     }
 
@@ -83,12 +97,14 @@ class MainActivity : kodepembantu() {
         }
 
         val imageModifier = Modifier
-            .width(IntrinsicSize.Max)
+            //.width(IntrinsicSize.Max)
+            .fillMaxWidth()
+            .fillMaxHeight()
 
         Image(
             painter = painterResource(R.drawable.atlasin2),
             contentDescription = "splash screen",
-            contentScale = ContentScale.Crop,            // crop the image if it's not a square
+            contentScale = ContentScale.FillHeight,            // crop the image if it's not a square
             modifier = imageModifier
 
         )
@@ -96,11 +112,11 @@ class MainActivity : kodepembantu() {
         // AnimationEffect
         LaunchedEffect(key1 = true) {
             scale.animateTo(
-                targetValue = 0.7f,
+                targetValue = 0.9f,
                 animationSpec = tween(
                     durationMillis = 800,
                     easing = {
-                        OvershootInterpolator(4f).getInterpolation(it)
+                        OvershootInterpolator(5f).getInterpolation(it)
                     })
             )
             delay(3000L)
@@ -120,8 +136,10 @@ class MainActivity : kodepembantu() {
 
     // Creating a composable function
     // to display Top Bar and options menu
+    @RequiresApi(Build.VERSION_CODES.N)
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
+
     fun TopBarrr() {
 
         // Create a boolean variable
@@ -130,20 +148,16 @@ class MainActivity : kodepembantu() {
 
         // fetching local context
         val mContext = LocalContext.current
+        val context = LocalContext.current
 
         // Creating a Top bar
+        AtlasDarkTheme() {
         TopAppBar(
             //title = { Text("Atlasindo", color = Color.White) },  Modifier.background(color =Color.Gray),
             title = { Text(text = getString(R.string.app_name),
                     style = MaterialTheme.typography.headlineMedium,
                     textAlign = TextAlign.Center)},
             actions = {
-
-                // Creating Icon button favorites, on click
-                // would create a Toast message
-                IconButton(onClick = { Toast.makeText(mContext, "Favorite", Toast.LENGTH_SHORT).show() }) {
-                    Icon(Icons.Default.Favorite, "")
-                }
 
                 // Creating Icon button for dropdown menu
                 IconButton(onClick = { mDisplayMenu = !mDisplayMenu }) {
@@ -158,54 +172,108 @@ class MainActivity : kodepembantu() {
 
                     // Creating dropdown menu item, on click
                     // would create a Toast message
-                    androidx.compose.material.DropdownMenuItem(onClick = { Toast.makeText(mContext, "Settings", Toast.LENGTH_SHORT).show() }) {
-                        Text(text = "Settings")
+                    androidx.compose.material.DropdownMenuItem(
+                        onClick =
+                        {
+                            //Toast.makeText(mContext, "Settings", Toast.LENGTH_SHORT).show()
+                            //changlanges()
+                            val Stgapp = Intent(this@MainActivity, Langchangcompose::class.java)
+                            startActivity(Stgapp)
+                        }) {
+                        Text(text = stringResource(R.string.pengaturanmain))
                     }
 
                     // Creating dropdown menu item, on click
                     // would create a Toast message
-                    androidx.compose.material.DropdownMenuItem(onClick = { Toast.makeText(mContext, "Logout", Toast.LENGTH_SHORT).show() }) {
-                        Text(text = "Logout")
+                    androidx.compose.material.DropdownMenuItem(
+                        onClick =
+                        {
+                            //Toast.makeText(mContext, "Settings", Toast.LENGTH_SHORT).show()
+                            //changlanges()
+                            val ptkapp = Intent(this@MainActivity, sumbercompose::class.java)
+                            startActivity(ptkapp)
+                        }) {
+                        Text(text = stringResource(R.string.pustaka))
                     }
+
+                    // Creating dropdown menu item, on click
+                    // would create a Toast message
+                    androidx.compose.material.DropdownMenuItem(
+                        onClick =
+                        {
+                            //Toast.makeText(mContext, "Settings", Toast.LENGTH_SHORT).show()
+                            //changlanges()
+                            val ttgapp = Intent(this@MainActivity, Tentangcompose::class.java)
+                            startActivity(ttgapp)
+                        }) {
+                        Text(text = stringResource(R.string.tentang_aplikasi))
+                    }
+
                 }
             }
         )
+        }
     }
 
     //composable view
+    @RequiresApi(Build.VERSION_CODES.N)
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     @OptIn(ExperimentalMaterial3Api::class)
     //@Preview(showBackground = true)
     @Composable
     fun DetailKonten(navigateToProfile: (Item_Atlasin) -> Unit) {
+        loadLocale()
+        Locale.current
+        AtlasDarkTheme() {
 
-        Column() {
+            Column() {
 
-            //Loading Top App Bar
-            TopBarrr()
+                //Loading Top App Bar
+                TopBarrr()
 
-            //Initiate Data from String.XML
-            Scaffold(
-                content = {
-                    //AtlasListContent()
-                    val atlasindo = remember { DataProvider.Item_Atlasin }
-                    LazyColumn(
-                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
-                    ) {
-                        items(
-                            items = atlasindo,
-                            itemContent = {
-                                AtlasCard(petaaa = it, navigateToProfile)
-                            })
+                //Initiate Data from String.XML
+                Scaffold(
+                    content = {
+                        //AtlasListContent()
+                        val atlasindo = remember { DataProvider.Item_Atlasin }
+                        LazyColumn(
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
+                        ) {
+                            items(
+                                items = atlasindo,
+                                itemContent = {
+                                    AtlasCard(petaaa = it, navigateToProfile)
+
+                                })
+                        }
+
                     }
+                )
 
-                }
-            )
+            }
+
+
         }
 
     }
 
 
+    //kembali_exit
+    private val TIME_INTERVAL = 2000 // # milliseconds, desired time passed between two back presses.
+
+    private var mBackPressed: Long = 0
+
+    override fun onBackPressed() {
+        if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis()) {
+            super.onBackPressed()
+            finishAffinity()
+            return
+        } else {
+            Toast.makeText(baseContext, getString(R.string.exit), Toast.LENGTH_SHORT)
+                .show()
+        }
+        mBackPressed = System.currentTimeMillis()
+    }
 
     //menambah pilihan option menu
     //-//-override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -246,21 +314,6 @@ class MainActivity : kodepembantu() {
     //-//-  }
     //-//-}
     //-//-}
-
-    //tombol share
-    fun shareme(view: View?) {
-        val intent = Intent()
-        val shareah = getString(R.string.daerah_ini)
-        val inidaerahnya = intent.getStringExtra(Tampilan_Detail.EXTRA_NAME)
-        val diaplikasi = getString(R.string.diaplikasi)
-        val lamdasasa = "$shareah $inidaerahnya $diaplikasi"
-        intent.action = Intent.ACTION_SEND
-        intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_TEXT, lamdasasa)
-        startActivity(Intent.createChooser(intent, "Share with:"))
-    }
-
-
+//finish code
 
 }
-//finish code

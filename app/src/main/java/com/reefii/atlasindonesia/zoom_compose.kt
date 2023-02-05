@@ -41,8 +41,8 @@ fun ZoomableImage() {
                 .align(Alignment.Center) // keep the image centralized into the Box
                 .graphicsLayer(
                     // adding some zoom limits (min 50%, max 200%)
-                    scaleX = maxOf(.5f, minOf(3f, scale.value)),
-                    scaleY = maxOf(.5f, minOf(3f, scale.value)),
+                    scaleX = maxOf(.5f, minOf(10f, scale.value)),
+                    scaleY = maxOf(.5f, minOf(10f, scale.value)),
                     rotationZ = rotationState.value
                 ),
             contentDescription = null,

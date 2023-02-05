@@ -2,7 +2,6 @@
 package com.reefii.atlasindonesia
 
 //import plugin yg diperlukan
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -29,7 +28,7 @@ open class kodepembantu: AppCompatActivity() {
         startActivity(intent)
     }
     //gmail
-    open fun gmail(view: View?) {
+    open fun gmail () {
         val intent = Intent(Intent.ACTION_SEND)
         intent.type = "plain/text"
         intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("arifpurnomoaji998@gmail.com"))
@@ -39,7 +38,7 @@ open class kodepembantu: AppCompatActivity() {
     }
 
     //Undih buku atlas indonesia
-    open fun unduhatlasindo(view: View?) {
+    open fun unduhatlasindo() {
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
         intent.addCategory(Intent.CATEGORY_BROWSABLE)
@@ -49,7 +48,7 @@ open class kodepembantu: AppCompatActivity() {
 
     //pengaturan bahasa
     @RequiresApi(Build.VERSION_CODES.N)
-    open fun changlanges(view: View?) {
+    fun changlanges() {
         val languages = arrayOf("Bahasa Indonesia", "English")
         val langSelectorBuilder = AlertDialog.Builder(this)
         langSelectorBuilder.setTitle(R.string.pengaturan)
@@ -64,6 +63,9 @@ open class kodepembantu: AppCompatActivity() {
             }
             recreate()
             dialog.dismiss()
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
         langSelectorBuilder.create().show()
     }
@@ -89,7 +91,7 @@ open class kodepembantu: AppCompatActivity() {
     }
 
     //pengaturan tema
-    open fun changetheme(view: View?) {
+    open fun changetheme() {
         val themeset = arrayOf("Light","Dark","System")
         val temasetBuilder = AlertDialog.Builder(this)
         val checkedItem = ThemePreferences(this).darkMode
@@ -117,6 +119,9 @@ open class kodepembantu: AppCompatActivity() {
             }
             recreate()
             dialog.dismiss()
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
         temasetBuilder.create().show()
     }
@@ -147,4 +152,27 @@ open class kodepembantu: AppCompatActivity() {
         }
     }
 
+
+
+
+
+    //tombol share
+    fun shareme(petaaa: Item_Atlasin) {
+        val intent = Intent()
+        val shareah = getString(R.string.daerah_ini)
+        val inidaerahnya = getString(petaaa.namep)
+        val diaplikasi = getString(R.string.diaplikasi)
+        val lamdasasa = "$shareah $inidaerahnya $diaplikasi"
+        intent.action = Intent.ACTION_SEND
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, lamdasasa)
+        startActivity(Intent.createChooser(intent, "Share with:"))
+    }
+
+
 }
+
+
+
+
+
